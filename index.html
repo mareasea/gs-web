@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marea</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="back" id="marea">
+        <header>
+            <img src="assets/img/logo.png" id="logo" alt="">
+            <div class="content">
+                <button class="openbtn" onclick="openNav()">
+                    <img id="m" src="assets/img/side.png" alt="menu">
+                </button>
+            </div>
+
+            <div class="sidebar">
+                <button class="closebtn" onclick="closeNav()"><img id="x" src="assets/img/x.png" alt=""></button>
+                <ul>
+                    <li><a href="#marea">MAREA</a></li>
+                    <li><a href="#problema">PROBLEMA</a></li>
+                    <li><a href="#tecnologia">TECNOLOGIA</a></li>
+                    <li><a href="#objetivos">OBJETIVOS</a></li>
+                    <li><a href="#publico">PÚBLICO</a></li>
+                    <li><a href="#conclusion">BENEFÍCIOS E IMPACTOS</a></li>
+                    <li><a href="#info">INFORMAÇÕES</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="inicio">
+            <p>“Tenho esperança de que um maior conhecimento do mar, que há milênios dá sabedoria ao homem, inspire mais uma vez os pensamentos e as ações daqueles que preservarão o equilíbrio da natureza e permitirão a conservação da própria vida.”<br>
+            -Jacques Cousteau, oceanógrafo</p>
+        </div>
+    </div>
+    
+    <div id="problema">
+        <div id="c">
+            <div id="circle1" onclick="openC('c1')">
+                <img src="assets/img/circle.png" alt="indicador">
+            </div>
+            <div id="circle2" onclick="openC('c2')">
+                <img src="assets/img/circle.png" alt="indicador">
+            </div>
+            <div id="circle3" onclick="openC('c3')">
+                <img src="assets/img/circle.png" alt="indicador">
+            </div>
+            <div id="circle4" onclick="openC('c4')">
+                <img src="assets/img/circle.png" alt="indicador">
+            </div>
+        </div>
+        <img id="coral" src="assets/img/coral.png" alt="coral">
+        <p>PROBLEMA</p>
+    </div>
+
+    <div id="circle-modal" class="c">
+        <button class="closebtn" onclick="closeC()"><img id="x" src="assets/img/x.png" alt=""></button>
+        <p id="circle-content"></p>
+    </div>
+
+    <div id="tecnologia">
+        <div class="card">
+            <div class="ex">
+                <h1>TECNOLOGIA</h1>
+                <br>
+                <br>
+                <p>Tecnologia de monitoramento constante, com sensores de temperatura, pH e raios UV, tudo isso conectado a um único sistema, coletando dados, montando gráficos e emitindo alertas caso necessário pois com a analise constante da saúde dos Recifes é possível responder rapidamente aos primeiros sinais de branqueamento ou de qualquer tipo de evento prejudicial, evitando a morte deles e de um vasto ecossistema.</p>
+                <button><a href="src/html/simulation.html">SIMULAÇÃO</a></button>
+            </div>
+            <div class="prototipo" onclick="openModal()"">
+                <img src="assets/img/teste.jpg" alt="teste">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Código Fonte</h3>
+            <button class="closebtn" onclick="closeModal()"><img id="x" src="assets/img/x.png" alt=""></button>
+            <pre><code>
+         void setup() {
+        // Configura o pino como saída
+        pinMode(ledPin, OUTPUT);
+        }
+                  
+        void loop() {
+        // Liga o LED
+        digitalWrite(ledPin, HIGH);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        // Desliga o LED
+        digitalWrite(ledPin, LOW);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        }
+         void setup() {
+        // Configura o pino como saída
+        pinMode(ledPin, OUTPUT);
+        }
+                  
+        void loop() {
+        // Liga o LED
+        digitalWrite(ledPin, HIGH);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        // Desliga o LED
+        digitalWrite(ledPin, LOW);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        }
+            </code></pre>
+        </div>
+    </div>
+
+    <div id="objetivos">
+        <div id="target">
+            <div id="img">
+                <img id="imagensBanner">
+            </div>
+            <div id="obj">
+                <h1>NOSSOS OBJETIVOS</h1>
+            </div>
+        </div>
+    </div>
+    <div id="publico">
+        <div id="public">
+            <img src="assets/img/public.png" alt="Nosso público-alvo são profissionais e colaboradores envolvidos em atividades relacionadas a áreas com recifes de corais, como a APA Costa dos Corais. Isso inclui cientistas, pesquisadores, gestores ambientais, profissionais do setor turístico e pescadores, entre outros atores que desempenham um papel importante na conservação e no uso sustentável desses ecossistemas marinhos. Nosso objetivo é fornecer informações relevantes, recursos e soluções para apoiar suas atividades e promover práticas que contribuam para a preservação dos recifes de corais e a sustentabilidade das comunidades que dependem deles.">
+        </div>
+    </div>
+
+    <div id="conclusion">
+        <div class="carrosel">
+            <div class="carrosel-content active" id="beneficios">
+                <div class="content1">
+                    <h1>BENEFÍCIO</h1>
+                    <br>
+                    <p>Os alertas automáticos identificarão estresse nos corais, permitindo uma resposta rápida e eficaz para aplacar os danos e proteger o ecossistema marinho</p>
+                </div>
+                <div class="imagem" onclick="toggleContent()">
+                    <img src="assets/img/impactos.png" alt="">
+                </div>
+            </div>
+            <div class="carrosel-content" id="impacto" style="display: none;">
+                <div class="imagem2" onclick="toggleContent()">
+                    <img src="assets/img/beneficios.png" alt="">
+                </div>
+                <div class="content2">
+                    <h1>IMPACTOS</h1>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Evitar danos irreversíveis aos corais</li>
+                        <br>
+                        <li>Proteger a biodiversidade marinha</li>
+                        <br>
+                        <li>Garantir a sustentabilidade dos recursos pesqueiros legais, contribuindo para a segurança alimentar.</li>
+                        <br>
+                        <li>Contribuir para avanços na pesquisa marinha e na conservação dos oceanos</li>
+                        <br>
+                        <li>Ajudar a evitar custos significativos associados à restauração e recuperação dos recifes danificado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <h1> “CONECTADOS PARA UM FUTURO AZUL”</h1>
+            <div id="info">
+                <a href="https://www.linkedin.com/in/ana-laura-torres-loureiro-b85ba1298?trk=contact-info" target="_blank"><img src="assets/img/in.png" alt="">Ana Torres Loureiro</a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-soave-b11a162a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="assets/img/in.png" alt="">João Victor Soave</a>
+                <a href="https://www.linkedin.com/in/vitor-augusto-4bb6a72b7/" target="_blank"><img src="assets/img/in.png" alt="">Vitor França de Oliveira </a>
+            </div>
+            <div id="parceiros">
+                <a href="https://www.fiap.com.br/" target="_blank"><img id="fiap" src="assets/img/fiap.png" alt=""></a>
+                <br>
+                <a href="https://www.oceans20brasil.org/" target="_blank"><img id="oc20" src="assets/img/ocean20.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
