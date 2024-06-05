@@ -43,7 +43,6 @@ header {
     display: flex;
     z-index: 2;
 }
-
 #logo {
     width: 251px;
     height: 100px;
@@ -204,7 +203,7 @@ header {
 #circle-modal {
     display: none;
     position: fixed;
-    z-index: 4;
+    z-index: 3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -238,6 +237,7 @@ header {
 .card {
     width: 972px;
     height: 425px;
+    cursor: pointer;
 }
 .ex {
     float: left;
@@ -275,7 +275,6 @@ header {
     float: left;
     width: 400px;
     height: 425px;
-    cursor: pointer;
 }
 .prototipo>img {
     width: 400px;
@@ -497,7 +496,7 @@ footer{
         width: 100%;
         height: 100px;
         display: flex;
-        z-index: 2;
+        z-index: 4;
     }
     #logo{
         width: 130px;
@@ -555,7 +554,7 @@ footer{
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 20px;
-        z-index: 3;
+        z-index: 4;
     }
     #problema {
         width: 100%;
@@ -597,6 +596,12 @@ footer{
         top: 50%;
         margin: 130px;
         left: 30%;
+        z-index: 2;
+    }
+
+    #test{
+        position: relative;
+        z-index: 2;
     }
     
     #circle3 {
