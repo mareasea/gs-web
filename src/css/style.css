@@ -41,7 +41,7 @@ header {
     width: 100%;
     height: 100px;
     display: flex;
-    z-index: 2;
+    z-index: 4;
 }
 #logo {
     width: 251px;
@@ -237,7 +237,6 @@ header {
 .card {
     width: 972px;
     height: 425px;
-    cursor: pointer;
 }
 .ex {
     float: left;
@@ -490,7 +489,181 @@ footer{
     transform: translate(190%, -260%);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+    #logo{
+        width: 150px;
+        height: 70px;
+        }
+        .inicio {
+            padding: 100px; 
+        }
+    
+        .inicio > p {
+            width: 100%; 
+            margin: 0; 
+            padding: 10px; 
+            font-size: medium; 
+            text-align: center;
+            margin-top: 150px;
+            margin-right: 10px;
+        }
+        #problema > p {
+            text-align: center;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 15vw;
+            color: rgba(255, 255, 255, 0.34);
+            margin: 0;
+            top: 250%;
+            left: 0;
+            transform: translate(0, -300%);
+        }
+        #problema > img {
+            width: 350px;
+            position: relative;
+            top: 23%;
+            left: 5%;
+            transform: translate(-5%, -90%);
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        #circle1 {
+            top: -45%;
+            left: 48%;
+        }
+        
+        #circle2 {
+            top: 1%;
+            left: 3%;
+        }
+    
+        
+        #circle3 {
+            top: 80%;
+            left: 45%;
+        }
+        
+        #circle4 {
+            top: 30%;
+            left: 30%;
+        }
+        .card{
+            padding: 5px;
+        }
+        .ex {
+            float: left;
+            width: 350px;
+            height: 300px;
+            background-color: white;
+            text-align: center;
+            font-size: small;
+            font-family: "Josefin Sans", sans-serif;
+            color: #142A38;
+            padding: 0;
+            margin: 0;
+        }
+        .ex>h1 {
+            padding: 10px;
+        }
+        .ex>p{
+            width: 300px;
+            font-size: small;
+            top: 20%;
+            left: 10%;
+            transform: translate(-10%, -20%);
+        }
+        .ex>button{
+            height: 20px;
+            transform: translate(10%, -400%);
+            background-color: #142A38;
+            border-radius: 15px;
+            border: #ffffff;
+        }
+        .ex>button>a{
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: smaller;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .prototipo {
+            float: left;
+            width: 150px;
+            height: 240px;
+        }
+        .prototipo>img {
+            width: 225px;
+            height: 300px;
+        }
+        #target{
+            margin-top: 5px;
+            width: 330px;
+            height: 390px;
+            background-color: white;
+        }
+        #img{
+            width: 330px;
+            height: 220px;
+        }
+        #imagensBanner{
+            width: 330px;
+            height: 300px;
+        }
+        #obj{
+            display: flex;
+            margin-top: 145px;
+            justify-content: flex-end;
+            font-family: "Josefin Sans", sans-serif;
+            color: #142A38;
+        }
+        #public {
+            width: 435px;
+            height: 390px;
+            border: solid 2px white;
+        }
+        #public>img{
+            width: 435px;
+            height: 390px;
+        }
+        .carrosel {
+            height: 390px;
+            width: 90%;
+            border: solid 2px #ffffff;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .content1, .content2 {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagem, .imagem2 {
+            width: 300px;
+            height: 400px;
+            display: flex;
+        }
+        #oc20{
+            height: 100px;
+            width: 150px;
+            transform: translate(80%, -120%);
+            margin-left: 85px;
+           
+        }
+        #fiap{
+            height: 50px;
+            width: 180px;
+            top: -30%;
+            left: -5%;
+            transform: translate(90%, -250%);
+        }
+}
+@media screen and (max-width: 500px){
     header {
         position: relative;
         width: 100%;
@@ -514,6 +687,7 @@ footer{
     }
     .sidebar a {
         padding: 55px 8px 20px 32px;
+        height: 10px;
         text-decoration: none;
         color: white;
         font-family: "Josefin Sans", sans-serif;
@@ -558,7 +732,7 @@ footer{
     }
     #problema {
         width: 100%;
-        height: 300px;
+        height: 750px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -571,9 +745,9 @@ footer{
         font-size: 15vw;
         color: rgba(255, 255, 255, 0.34);
         margin: 0;
-        top: 190%;
+        top: 250%;
         left: 0;
-        transform: translate(0, -190%);
+        transform: translate(0, -630%);
     }
 
     #problema > img {
@@ -581,51 +755,47 @@ footer{
         position: relative;
         top: 23%;
         left: 5%;
-        transform: translate(-5%, -25%);
+        transform: translate(-5%, -280%);
         margin-bottom: 20px;
         z-index: 1;
     }
 
     #circle1 {
-        top: 10%;
+        top: 35%;
         margin-top: 120px;
-        left: 40%;
+        left: 48%;
     }
     
     #circle2 {
-        top: 50%;
+        top: 42%;
         margin: 130px;
         left: 30%;
         z-index: 2;
     }
 
-    #test{
-        position: relative;
-        z-index: 2;
-    }
     
     #circle3 {
-        top: 60%;
+        top: 43%;
         margin-top: 170px;
-        left: 50%;
+        left: 45%;
     }
     
     #circle4 {
-        top: 70%;
+        top: 38%;
         margin-top: 140px;
         left: 30%;
     }
 
     #tecnologia {
         width: 100%;
-        height: 400px;
+        height: 750px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #142A38;
     }
     .card {
-        margin-left: 0%;
+        margin-left: 7%;
         height:240px;
     }
     .ex {
@@ -649,6 +819,20 @@ footer{
         top: 20%;
         left: 25%;
         transform: translate(-15%, -20%);
+    }
+    .ex>button{
+        height: 20px;
+        transform: translate(10%, -400%);
+        background-color: #142A38;
+        border-radius: 15px;
+        border: #ffffff;
+    }
+    .ex>button>a{
+        margin: 5px;
+        text-decoration: none;
+        color: white;
+        font-size: smaller;
+        font-family: "Josefin Sans", sans-serif;
     }
     .prototipo {
         float: left;
@@ -692,7 +876,7 @@ footer{
     }
     #objetivos {
         width: 100%;
-        height: 500px;
+        height: 750px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -721,7 +905,7 @@ footer{
     }
     #publico {
         width: 100%;
-        height: 400px;
+        height: 750px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -738,7 +922,7 @@ footer{
     }
     #conclusion {
         width: 100%;
-        height: 450px;
+        height: 750px;
         display: flex;
         align-items: center;
         justify-content: center;

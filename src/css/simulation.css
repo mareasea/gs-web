@@ -19,3 +19,23 @@ header>a>img{
     width: 251px;
     height: 100px;
 }
+@media screen and (max-width: 800px){
+    #logo{
+        width: 150px;
+        height: 70px;
+        }
+        header>a>img{
+            margin-top: 35px;
+            margin-left: 400px;
+        }
+}
+@media screen and (max-width: 500px){
+    #logo{
+        width: 130px;
+        height: 70px;
+    }
+    header>a>img{
+        margin-top: 35px;
+        margin-left: 200px;
+    }
+}
