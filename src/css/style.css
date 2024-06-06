@@ -813,7 +813,6 @@ footer{
         background-color: #142A38;
     }
     .card {
-        margin-left: 2px;
         height:240px;
     }
     .ex {
@@ -854,11 +853,11 @@ footer{
     }
     .prototipo {
         float: left;
-        width: 150px;
+        width: 149px;
         height: 240px;
     }
     .prototipo>img {
-        width: 150px;
+        width: 149px;
         height: 240px;
     }
     .modal {
