@@ -162,6 +162,7 @@ header {
     position: absolute;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 #circle1 {
@@ -199,6 +200,25 @@ header {
     gap: 20px;
 }
 
+#circle1:hover{
+    background:white;
+    border-radius: 50%;
+}
+
+#circle2:hover{
+    background:white;
+    border-radius: 50%;
+}
+
+#circle3:hover{
+    background:white;
+    border-radius: 50%;
+}
+
+#circle4:hover{
+    background:white;
+    border-radius: 50%;
+}
 
 #circle-modal {
     display: none;
@@ -278,6 +298,7 @@ header {
 .prototipo>img {
     width: 400px;
     height: 425px;
+    cursor: pointer;
 }
 .modal {
     display: none;
@@ -686,8 +707,8 @@ footer{
         background-color: transparent;
     }
     .sidebar a {
-        padding: 55px 8px 20px 32px;
-        height: 10px;
+        padding: 50px 8px 20px 32px;
+        height: 5px;
         text-decoration: none;
         color: white;
         font-family: "Josefin Sans", sans-serif;
@@ -697,11 +718,8 @@ footer{
     }
     .sidebar .closebtn {
         position: absolute;
-        top: 0;
-        right: 5px;
+        right: 110px;
         margin: 5px;
-        font-size: 40px;
-        margin-left: 80px;
         border-style: none;
         background-color: transparent;
     }
@@ -795,7 +813,7 @@ footer{
         background-color: #142A38;
     }
     .card {
-        margin-left: 7%;
+        margin-left: 5%;
         height:240px;
     }
     .ex {
@@ -840,7 +858,7 @@ footer{
         height: 240px;
     }
     .prototipo>img {
-        width: 152px;
+        width: 150px;
         height: 240px;
     }
     .modal {
@@ -884,21 +902,22 @@ footer{
     }
     #target{
         margin-top: 5px;
-        width: 330px;
+        width: 340px;
         height: 390px;
         background-color: white;
     }
     #img{
-        width: 330px;
-        height: 220px;
+        width: 340px;
+        height: 230px;
     }
     #imagensBanner{
-        width: 330px;
-        height: 300px;
+        width: 340px;
+        height: 310px;
     }
     #obj{
         display: flex;
-        margin-top: 145px;
+        margin-right: 2px;
+        margin-top: 132px;
         justify-content: flex-end;
         font-family: "Josefin Sans", sans-serif;
         color: #142A38;
