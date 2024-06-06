@@ -817,7 +817,7 @@ footer{
     }
     .ex {
         float: left;
-        width: 230px;
+        width: 228px;
         height: 240px;
         background-color: white;
         text-align: center;
@@ -853,11 +853,11 @@ footer{
     }
     .prototipo {
         float: left;
-        width: 145px;
+        width: 142px;
         height: 240px;
     }
     .prototipo>img {
-        width: 145px;
+        width: 142px;
         height: 240px;
     }
     .modal {
