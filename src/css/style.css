@@ -803,7 +803,23 @@ footer{
         margin-top: 140px;
         left: 30%;
     }
-
+    #circle-modal {
+        display: none;
+        position: fixed;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        background-color: #313d4b;
+        width: 350px;
+        height: 350px;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: large;
+        color: #F8F8F2;
+        padding: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
     #tecnologia {
         width: 100%;
         height: 750px;
@@ -853,11 +869,11 @@ footer{
     }
     .prototipo {
         float: left;
-        width: 142px;
+        width: 143px;
         height: 240px;
     }
     .prototipo>img {
-        width: 142px;
+        width: 143px;
         height: 240px;
     }
     .modal {
