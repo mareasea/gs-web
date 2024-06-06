@@ -10,17 +10,6 @@ function closeNav() {
    document.querySelector(".content").style.marginRight = "0";
 }
 
-function openModal() {
-     const modal = document.querySelector("#modal");
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden"; 
-}
-
-function closeModal() {
-     const modal = document.querySelector("#modal");
-     modal.style.display = "none";
-     document.body.style.overflow = "auto"; 
-}
 
 function openC(circleId) {
    const modal = document.querySelector("#circle-modal");
