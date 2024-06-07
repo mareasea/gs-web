@@ -44,16 +44,16 @@ function closeC() {
 
 
 
- function slides() {
-    let imagePaths = ['././assets/img/1.png', '././assets/img/2.png', '././assets/img/3.png', '././assets/img/5.png'];
-    let currentIndex = 0;
+let currentIndex = 1;
+let imagePaths = ['././assets/img/1.png', '././assets/img/2.png', '././assets/img/3.png', '././assets/img/5.png'];
+document.getElementById("imagensBanner").src = imagePaths[currentIndex];
+currentIndex = (currentIndex + 1) % imagePaths.length;
 
-    setInterval(() => {
-        document.getElementById("imagensBanner").src = imagePaths[currentIndex];
-        currentIndex = (currentIndex + 1) % imagePaths.length;
-    }, 5500);
+function slides() {
+    document.getElementById("imagensBanner").src = imagePaths[currentIndex];
+    currentIndex = (currentIndex + 1) % imagePaths.length;
 }
-slides();
+
 
 function toggleContent() {
    const beneficios = document.getElementById('beneficios');
