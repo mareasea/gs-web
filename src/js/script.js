@@ -1,4 +1,4 @@
-
+localStorage.setItem("logado", "false");
 
 function openNav() {
     document.querySelector(".sidebar").style.width = "150px";

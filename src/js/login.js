@@ -13,3 +13,4 @@ function validar(event) {
         alert("Usuário ou senha inválidos");
     }
 }
+alert("Para fins de avaliação\nUsuário: Admin\nSenha:12345")
