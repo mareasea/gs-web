@@ -295,7 +295,7 @@ header {
     width: 400px;
     height: 425px;
 }
-.prototipo>img {
+.prototipo>a>img {
     width: 400px;
     height: 425px;
     cursor: pointer;
@@ -846,41 +846,11 @@ footer{
         width: 143px;
         height: 240px;
     }
-    .prototipo>img {
+    .prototipo>a>img {
         width: 143px;
         height: 240px;
     }
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 3;
-        left: 40px;
-        top: 220px;
-        width: 100%;
-        height: 100%;
-    }
     
-    .modal-content {
-        background-color: #313d4b;
-        width: 300px;
-        height: 300px;
-        position: fixed;
-        font-family: monospace;
-        font-size: small;
-        color: #F8F8F2;
-        border-radius: 5px;
-        overflow: auto;
-    }
-    .modal-content .closebtn{
-        position: absolute;
-        top: 0;
-        right: 5px;
-        margin: 5px;
-        font-size: 36px;
-        margin-left: 80px;
-        border-style: none;
-        background-color: transparent;
-    }
     #objetivos {
         width: 100%;
         height: 750px;
