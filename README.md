@@ -1,4 +1,6 @@
 <img src="https://github.com/mareasea/.github/assets/136378912/8ed2bc74-9c57-4ef6-b949-3e90b610463c"  width="300px"> 
+<br>
+<a href="https://mareasea.github.io/gs-web/">Visite o site</a>
 
 # VISÃO GERAL
 **Marea é um projeto web voltado para a promoção da conservação dos recifes de corais através do uso de tecnologia avançada de monitoramento. O site é projetado para aumentar a conscientização sobre a importância da conservação dos recifes de corais. Ele utiliza o prototipo de uma tecnologia para monitorar a saúde dos recifes de corais e fornecer dados valiosos para pesquisadores, ambientalistas e outros interessados. O site inclui informações sobre o problema da degradação dos recifes de corais, a tecnologia usada para monitoramento, os objetivos do projeto e o público-alvo**
